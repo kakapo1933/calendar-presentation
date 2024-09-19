@@ -17,8 +17,8 @@ Follow these steps to set up the project for development:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd react-component-overview
+   git clone https://github.com/kakapo1933/calendar-presentation.git
+   cd calendar\ presentation
    ```
 
 2. Install dependencies:
