@@ -52,3 +52,14 @@ To create a production-ready build and deploy the application:
 3. Deploy the contents of the `dist` folder to your preferred hosting platform (e.g., Netlify, Vercel, or GitHub Pages).
 
 Note: Ensure your hosting environment supports single-page applications and configure it to serve `index.html` for all routes.
+
+## Tasks
+
+### Task 1: Disable Navigation and Cross-Month Selection
+
+To disable both navigation and cross-month selection, simply uncheck the "Enable Navigation" and "Enable Cross-Month Selection" checkboxes at the bottom of the component.
+
+### Task 2: Enable Navigation and Cross-Month Selection
+
+To enable both navigation and cross-month selection, simply check the "Enable Navigation" and "Enable Cross-Month Selection" checkboxes at the bottom of the component.
+
