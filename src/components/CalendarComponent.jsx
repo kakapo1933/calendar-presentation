@@ -6,7 +6,7 @@ const CalendarComponent = () => {
   const [currentDate, setCurrentDate] = useState(moment());
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
-  const [navigationEnabled, setNavigationEnabled] = useState(true);
+  const [navigationEnabled, setNavigationEnabled] = useState(false);
   const [crossMonthSelectionEnabled, setCrossMonthSelectionEnabled] = useState(false);
   const currentMonth = currentDate.format('YYYY年MM月');
   const daysInMonth = currentDate.daysInMonth();
