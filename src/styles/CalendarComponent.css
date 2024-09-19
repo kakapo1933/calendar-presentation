@@ -1,0 +1,83 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header {
+  width: 350px;
+  height: 44px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day, .empty-day {
+  width: 50px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.day {
+}
+
+.day:hover {
+  background-color: #e6e6e6;
+}
+
+.day.active {
+  background-color: #006edc;
+  color: white; 
+}
+
+.day.non-current-month {
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.month-select {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.month-select:hover {
+  background-color: #e6e6e6;
+}
+
+.switches {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.navigation-switch, .cross-month-switch {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-switch label, .cross-month-switch label {
+  margin-left: 5px;
+}
