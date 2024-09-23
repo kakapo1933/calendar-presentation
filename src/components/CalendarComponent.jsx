@@ -68,7 +68,8 @@ const CalendarComponent = () => {
     );
   }
 
-  const remainingDays = 42 - (startDay + daysInMonth);
+  const TOTAL_CALENDAR_DAYS = 6 * 7; // 6 rows, 7 days per week
+  const remainingDays = TOTAL_CALENDAR_DAYS - (startDay + daysInMonth);
   for (let i = 1; i <= remainingDays; i++) {
     const day = currentDate.clone().add(1, 'month').date(i);
     const isActive = crossMonthSelectionEnabled && isActiveDay(day);
